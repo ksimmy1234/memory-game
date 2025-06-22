@@ -19,6 +19,13 @@ document.addEventListener("keypress",function(){
     }
 });
 
+document.getElementById("start-btn").addEventListener("click", function () {
+    if (!started) {
+        started = true;
+        Levelup();
+    }
+});
+
 function Levelup(){
     userseq = [];
     level++;
